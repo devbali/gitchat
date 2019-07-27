@@ -2,8 +2,8 @@
 Chatting based on git
 
 ## Note
-* Please do not clone this repository and use it, because then the entire world sees your chats
-* 
+* Please do not clone this repository and use it, because this is the main repo that everyone will fork off of
+* Either fork this to a public repository or make your own private repository using this code
 
 ## Dependencies
 * Python version 3.0
