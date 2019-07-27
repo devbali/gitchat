@@ -13,8 +13,8 @@ Chatting based on git
 ## Instructions and Setup
 * Clone the repository, make sure you satisfy the dependencies
 * Make sure that you have SSH key passwords stored in keychain so git can be pulled and pushed automatically
-* Run the `trendsetter.py` python file
-* View desired chat in the `trendsetter.log` file
+* Run the `main.py` python file
+* View desired chat in the `main.log` file
 * Edit nicknames in `nicknames.json` to view desired names instead of user ids
 
 ## How to Use it
