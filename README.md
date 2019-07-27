@@ -1,5 +1,9 @@
-# Trendsetter University
+# Git Chat
 Chatting based on git
+
+## Note
+* Please do not clone this repository and use it, because then the entire world sees your chats
+* 
 
 ## Dependencies
 * Python version 3.0
