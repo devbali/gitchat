@@ -134,9 +134,9 @@ def update_cache (user, timestamp):
 	with open ("cache/usercache.txt","w") as cachefile:
 		cachefile.write(text)
 
-def update (line,topush=False):
+def update (line=None,topush=False):
 	global nicknames
-	if topush: commit(line)
+	if topush: commit(str(line))
 	pull()
 	if topush: push()
 
