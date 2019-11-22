@@ -78,9 +78,9 @@ else:
 	with open ("nicknames.json","r") as nickfile:
 		nicknames = json.load(nickfile)
 
-def commit ():
+def commit (line):
 	repo.git.add("cache/"+user_self)
-	repo.git.commit(m = "Regular Commit")
+	repo.git.commit(m = line)
 	print("Committed, ", end = "")
 
 def push ():
@@ -134,9 +134,9 @@ def update_cache (user, timestamp):
 	with open ("cache/usercache.txt","w") as cachefile:
 		cachefile.write(text)
 
-def update (topush=False):
+def update (line,topush=False):
 	global nicknames
-	if topush: commit()
+	if topush: commit(line)
 	pull()
 	if topush: push()
 
@@ -183,7 +183,7 @@ def write (user,message):
 	with open("cache/" + user,"a") as tmp_file:
 		tmp_file.write(line + "\n")
 	print("Written Locally")
-	update(True)
+	update(line,True)
 
 print ("\nAlways enter quit to quit")
 print ("Press enter to reload the log file\n")
