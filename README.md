@@ -7,8 +7,8 @@ Chatting based on git
 
 ## Dependencies
 * Python version 3.0
+* SSH key fed to git config
 * GitPython library, to install execute `pip install GitPython`
-* An Internet Connection
 
 ## Instructions and Setup
 * Clone the repository, make sure you satisfy the dependencies
